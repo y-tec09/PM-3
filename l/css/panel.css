@@ -1,0 +1,409 @@
+@import './fonts/css/fontello.css';
+@import './categorias/social/qrs_block.css';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+  background-image: url('imgs/fondo.jpg');
+  margin: 0;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.cont-princ {
+  width: 100%;
+  height: 100vh;
+  background-color: #e9c7f7;
+}
+.header-princ {
+  width: auto;
+  height: 60px;
+  padding: 10px;
+}
+.main-princ {
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+.footer-princ {
+  width: auto;
+  height: 60px;
+  padding: 10px;
+}
+
+/*Marca de agua*/
+.marca-agua {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  padding: 6px;
+  margin-right: 10px;
+  background-color: #c766f1;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 0.7;
+}
+.marca-agua a {
+  color: #fff;
+  text-decoration: none;
+}
+.marca-agua a span {
+  line-height: 10px;
+}
+/*Fin de marca*/
+
+/*Colores de cuadro*/
+.color-sec {background-color: #e9c7f7; color: #fff;}
+/*Fin de colores*/
+
+/*Elementos del inicio*/
+.inicio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.inicio p {
+  margin-top: 10px;
+}
+.cont-inicio {
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont-inicio img {
+  width: 120px;
+}
+.h4-princ {
+  font-size: 30px;
+  color: #c766f1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*Fin del inicio*/
+
+/*Barra de progreso*/
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+#myBar {
+  width: 1%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #c766f1;
+}
+@media screen and (min-width: 800px) {
+  #myProgress {
+    width: 60%;
+
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+/*Fin de barra de progreso*/
+
+.footer {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 20px;
+  background-color: #c766f1;
+}
+
+.header {
+  width: 100%;
+  background-color: #e9c7f7;
+}
+
+/*Menú web responsivo*/
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #c766f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  z-index: 99;
+}
+
+.topnav a:hover {
+  background-color: #c766f1;
+  color: #fff;
+}
+
+.topnav a.active {
+  background-color: #c766f1;
+  color: #fff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*Fin del menú*/
+
+/*Elementos del hero text*/
+.hero-text {
+  width: 100%;
+  padding: 10px;
+  min-height: 300px;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-text button {
+  margin-top: 10px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #c766f1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #e9c7f7;
+  color: white;
+}
+/*Fin del hero text*/
+
+/*Elementos del main*/
+.main {
+  width: 100%;
+  height: auto;
+  /*padding: 10px;*/
+  background-color: #fff;
+}
+.cont-main {
+  background-color: #fff;
+  min-height: 100px;
+}
+@media screen and (min-width: 800px) {
+  .main {
+    width: 100%;
+  }
+}
+/*Fin del main*/
+
+/*titulos de sección*/
+.t-seccion {
+  text-align: center;
+  color: #f7b32b;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f7b32b;
+}
+/*Fin de titulos*/
+
+/*Botón de llamada*/
+.btn-llamada {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.btn-llamada button {
+  width: 250px;
+  height: 50px;
+  border: none;
+  background-color: #c766f1;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 800px) {
+  .btn-llamada button {
+    width: 400px;
+    height: 80px;
+    font-size: 24px;
+  }
+}
+/*Fin del botón*/
+
+/*Elementos de anuncios*/
+.polaroid {
+  width: 100%;
+  height: auto;
+}
+.polaroid img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.polaroid > .container {
+  width: 100%;
+  height: auto;
+}
+.polaroid > .container h3 {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 800px) {
+  .polariod {
+    display: flex;
+    justify-content: space-between;
+  }
+  .polaroid img {
+    width: 50%;
+  }
+  .polaroid > .container {
+    width: 50%;
+  }
+}
+/*Fin de elementos*/
+
+/*Sección de mapa*/
+.mapa {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sec-mapa h3 {
+  padding: 10px;
+}
+.sec-mapa article {
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .mapa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sec-mapa {
+    width: 50%;
+  }
+}
+/*Fin de sección de mapa*/
+
+/*card del horario*/
+.card-horario {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.card-horario img {
+  width: 100%;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered {
+  color: #c766f1;
+  border-bottom: 1px solid #c766f1;
+}
+.sec-mapa {
+  padding: 10px;
+}
+@media screen and (min-width: 800px) {
+  .card-horario {
+    width: 100%;
+  }
+  .card-hora {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/*Fin del card horario*/
+
+/*Info footer*/
+.info-neg {
+  padding: 10px;
+  color: #fff;
+
+  display: flex;
+}
+.info-neg img {
+  width: 30px;
+}
+.info-neg p {
+  line-height: 30px;
+  margin-left: 10px;
+}
+/*Fin de info*/
